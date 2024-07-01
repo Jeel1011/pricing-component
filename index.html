@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pricing component</title>
+	<!-- csss file -->
+	<link rel="stylesheet" href="./CSS/style.css">
+	<!-- responsive css file -->
+	<link rel="stylesheet" href="./CSS/Responsive.css">
+	<!-- font file -->
+	<link rel="stylesheet" href="./CSS/fonts.css">
+</head>
+<body>
+	<!-- heading -->
+	<header class="pricing-heading">
+		<h1 class="pricing-heading-text">Simple, traffic-based pricing</h1>
+		<p class="pricing-subheading-text">Sign-up for our 30-day trial. No credit card required</p>
+	</header>
+	<!-- pricing container -->
+	<main class="container">
+		<!-- pageview and price section -->
+		<section class="container__coverage-section">
+			<div class="coverage-section__view-section">
+				<span id="pageview-number">100k</span>
+				<label class="pageviews-text">pageviews</label>
+			</div>
+			<input type="range" class="input-range"  id="input-range" min="0" max="100" step="1"/>
+			<div class="coverage-section__price-section">
+				<span id="price-number">$16.00</span>
+				<label id="duration-text" class="duration-text">/ month</label>
+			</div>
+		</section>
+		<!-- monthly and yearly billing section -->
+		<section class="container__duration-selection-section">
+			<span class="duration-selection-section__monthly-selection">Monthly Billing</span>
+			<label class="switch-section">
+				<input type="checkbox" id="input-switcher" class="input-switcher">
+				<span class="slider"></span>
+			</label>
+			<span class="duration-selection-section__yearly-selection">Yearly Billing
+				<span class="yearly-discount">
+					<span class="yearly-discount--mobile-view">-25%</span>
+					<span class="yearly-discount--desktop-view">25% discount</span>
+					</span>
+			</span>
+		</section>
+		<!-- border line below billing -->
+		<div class="seprate-line"></div>
+		<!-- feature section -->
+		<section class="container__feature-section">
+			<ul class="feature-section-list">
+				<li class="feature-section-list--item"><img src="./assets/images/check-icon.svg" alt="check-icon" >Unlimited websites</li>
+				<li class="feature-section-list--item"><img src="./assets/images/check-icon.svg" alt="check-icon" >100% data ownership</li>
+				<li class="feature-section-list--item"><img src="./assets/images/check-icon.svg" alt="check-icon" >Email reports</li>
+			</ul>
+			<button type="submit" class="container__submit-button" >Start my trial</button>
+		</section>
+
+	</main>
+	<!-- script section -->
+	<script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
